@@ -7,46 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3286236C1B8816C000346850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3286236B1B8816C000346850 /* AppDelegate.swift */; };
-		3286236E1B8816C000346850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3286236D1B8816C000346850 /* ViewController.swift */; };
-		328623711B8816C000346850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3286236F1B8816C000346850 /* Main.storyboard */; };
-		328623731B8816C000346850 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328623721B8816C000346850 /* Images.xcassets */; };
-		328623761B8816C000346850 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 328623741B8816C000346850 /* LaunchScreen.xib */; };
-		328623821B8816C000346850 /* ParallaxCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328623811B8816C000346850 /* ParallaxCellsTests.swift */; };
+		328623921B8816FD00346850 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3286238B1B8816FD00346850 /* Images.xcassets */; };
+		328623931B8816FD00346850 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3286238C1B8816FD00346850 /* LaunchScreen.xib */; };
+		328623941B8816FD00346850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3286238D1B8816FD00346850 /* Main.storyboard */; };
+		328623951B8816FD00346850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3286238E1B8816FD00346850 /* AppDelegate.swift */; };
+		328623961B8816FD00346850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3286238F1B8816FD00346850 /* ViewController.swift */; };
+		328623971B8816FD00346850 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328623901B8816FD00346850 /* ImageCell.swift */; };
+		328623981B8816FD00346850 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328623911B8816FD00346850 /* CellModel.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3286237C1B8816C000346850 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3286235E1B8816C000346850 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 328623651B8816C000346850;
-			remoteInfo = ParallaxCells;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		328623661B8816C000346850 /* ParallaxCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3286236A1B8816C000346850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3286236B1B8816C000346850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3286236D1B8816C000346850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		328623701B8816C000346850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		328623721B8816C000346850 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		328623751B8816C000346850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3286237B1B8816C000346850 /* ParallaxCellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxCellsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		328623801B8816C000346850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		328623811B8816C000346850 /* ParallaxCellsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCellsTests.swift; sourceTree = "<group>"; };
+		3286238B1B8816FD00346850 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3286238C1B8816FD00346850 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		3286238D1B8816FD00346850 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3286238E1B8816FD00346850 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3286238F1B8816FD00346850 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		328623901B8816FD00346850 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		328623911B8816FD00346850 /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		328623631B8816C000346850 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		328623781B8816C000346850 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				328623681B8816C000346850 /* ParallaxCells */,
-				3286237E1B8816C000346850 /* ParallaxCellsTests */,
 				328623671B8816C000346850 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				328623661B8816C000346850 /* ParallaxCells.app */,
-				3286237B1B8816C000346850 /* ParallaxCellsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,12 +58,14 @@
 		328623681B8816C000346850 /* ParallaxCells */ = {
 			isa = PBXGroup;
 			children = (
-				3286236B1B8816C000346850 /* AppDelegate.swift */,
-				3286236D1B8816C000346850 /* ViewController.swift */,
-				3286236F1B8816C000346850 /* Main.storyboard */,
-				328623721B8816C000346850 /* Images.xcassets */,
-				328623741B8816C000346850 /* LaunchScreen.xib */,
 				328623691B8816C000346850 /* Supporting Files */,
+				3286238B1B8816FD00346850 /* Images.xcassets */,
+				3286238C1B8816FD00346850 /* LaunchScreen.xib */,
+				3286238D1B8816FD00346850 /* Main.storyboard */,
+				3286238E1B8816FD00346850 /* AppDelegate.swift */,
+				3286238F1B8816FD00346850 /* ViewController.swift */,
+				328623901B8816FD00346850 /* ImageCell.swift */,
+				328623911B8816FD00346850 /* CellModel.swift */,
 			);
 			path = ParallaxCells;
 			sourceTree = "<group>";
@@ -91,23 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				3286236A1B8816C000346850 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3286237E1B8816C000346850 /* ParallaxCellsTests */ = {
-			isa = PBXGroup;
-			children = (
-				328623811B8816C000346850 /* ParallaxCellsTests.swift */,
-				3286237F1B8816C000346850 /* Supporting Files */,
-			);
-			path = ParallaxCellsTests;
-			sourceTree = "<group>";
-		};
-		3286237F1B8816C000346850 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				328623801B8816C000346850 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,24 +98,6 @@
 			productReference = 328623661B8816C000346850 /* ParallaxCells.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3286237A1B8816C000346850 /* ParallaxCellsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 328623881B8816C000346850 /* Build configuration list for PBXNativeTarget "ParallaxCellsTests" */;
-			buildPhases = (
-				328623771B8816C000346850 /* Sources */,
-				328623781B8816C000346850 /* Frameworks */,
-				328623791B8816C000346850 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3286237D1B8816C000346850 /* PBXTargetDependency */,
-			);
-			name = ParallaxCellsTests;
-			productName = ParallaxCellsTests;
-			productReference = 3286237B1B8816C000346850 /* ParallaxCellsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +109,6 @@
 				TargetAttributes = {
 					328623651B8816C000346850 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					3286237A1B8816C000346850 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 328623651B8816C000346850;
 					};
 				};
 			};
@@ -182,7 +126,6 @@
 			projectRoot = "";
 			targets = (
 				328623651B8816C000346850 /* ParallaxCells */,
-				3286237A1B8816C000346850 /* ParallaxCellsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,16 +135,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				328623711B8816C000346850 /* Main.storyboard in Resources */,
-				328623761B8816C000346850 /* LaunchScreen.xib in Resources */,
-				328623731B8816C000346850 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		328623791B8816C000346850 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				328623941B8816FD00346850 /* Main.storyboard in Resources */,
+				328623931B8816FD00346850 /* LaunchScreen.xib in Resources */,
+				328623921B8816FD00346850 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,47 +148,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3286236E1B8816C000346850 /* ViewController.swift in Sources */,
-				3286236C1B8816C000346850 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		328623771B8816C000346850 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				328623821B8816C000346850 /* ParallaxCellsTests.swift in Sources */,
+				328623961B8816FD00346850 /* ViewController.swift in Sources */,
+				328623951B8816FD00346850 /* AppDelegate.swift in Sources */,
+				328623971B8816FD00346850 /* ImageCell.swift in Sources */,
+				328623981B8816FD00346850 /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3286237D1B8816C000346850 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 328623651B8816C000346850 /* ParallaxCells */;
-			targetProxy = 3286237C1B8816C000346850 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3286236F1B8816C000346850 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				328623701B8816C000346850 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		328623741B8816C000346850 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				328623751B8816C000346850 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		328623831B8816C000346850 /* Debug */ = {
@@ -291,7 +194,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -340,9 +243,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ParallaxCells/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,43 +255,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ParallaxCells/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		328623891B8816C000346850 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ParallaxCellsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallaxCells.app/ParallaxCells";
-			};
-			name = Debug;
-		};
-		3286238A1B8816C000346850 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ParallaxCellsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallaxCells.app/ParallaxCells";
 			};
 			name = Release;
 		};
@@ -407,14 +279,6 @@
 			buildConfigurations = (
 				328623861B8816C000346850 /* Debug */,
 				328623871B8816C000346850 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		328623881B8816C000346850 /* Build configuration list for PBXNativeTarget "ParallaxCellsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				328623891B8816C000346850 /* Debug */,
-				3286238A1B8816C000346850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
