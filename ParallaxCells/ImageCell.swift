@@ -17,7 +17,6 @@ class ImageCell: UITableViewCell {
 
     let imageParallaxFactor: CGFloat = 20
 
-    var initialised = false
     var imgBackTopInitial: CGFloat!
     var imgBackBottomInitial: CGFloat!
 
@@ -27,20 +26,16 @@ class ImageCell: UITableViewCell {
         }
     }
 
-    func updateView() {
-        self.initialiseIfNeeded()
-        self.imgBack.image = UIImage(named:self.model.imageName)
-        self.lblTitle.text = self.model.title
+    override func awakeFromNib() {
+        self.clipsToBounds = true
+        self.imgBackBottomConstraint.constant -= 2 * imageParallaxFactor
+        self.imgBackTopInitial = self.imgBackTopConstraint.constant
+        self.imgBackBottomInitial = self.imgBackBottomConstraint.constant
     }
 
-    func initialiseIfNeeded() {
-        if (!self.initialised && self.imgBack != nil) {
-            self.clipsToBounds = true
-            self.imgBackBottomConstraint.constant -= 2 * imageParallaxFactor
-            self.imgBackTopInitial = self.imgBackTopConstraint.constant
-            self.imgBackBottomInitial = self.imgBackBottomConstraint.constant
-            self.initialised = true
-        }
+    func updateView() {
+        self.imgBack.image = UIImage(named:self.model.imageName)
+        self.lblTitle.text = self.model.title
     }
 
     func setBackgroundOffset(offset:CGFloat) {
