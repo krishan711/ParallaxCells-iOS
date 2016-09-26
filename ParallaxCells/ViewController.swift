@@ -27,49 +27,49 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.models.append(CellModel(title: "Title 4", imageName: "image4"))
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == 0) {
             return self.models.count * 100
         }
         return 0
     }
-    func modelAtIndexPath(indexPath: NSIndexPath) -> CellModel {
-        return self.models[indexPath.row % self.models.count]
+    func modelAtIndexPath(_ indexPath: IndexPath) -> CellModel {
+        return self.models[(indexPath as NSIndexPath).row % self.models.count]
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("ImageCell") as! ImageCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell") as! ImageCell
         cell.model = self.modelAtIndexPath(indexPath)
         return cell
     }
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated:true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated:true)
     }
 
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (scrollView == self.tblMain) {
-            for indexPath in self.tblMain.indexPathsForVisibleRows() as! [NSIndexPath] {
-                self.setCellImageOffset(self.tblMain.cellForRowAtIndexPath(indexPath) as! ImageCell, indexPath: indexPath)
+            for indexPath in self.tblMain.indexPathsForVisibleRows! {
+                self.setCellImageOffset(self.tblMain.cellForRow(at: indexPath) as! ImageCell, indexPath: indexPath)
             }
         }
     }
 
-    func setCellImageOffset(cell: ImageCell, indexPath: NSIndexPath) {
-        var cellFrame = self.tblMain.rectForRowAtIndexPath(indexPath)
-        var cellFrameInTable = self.tblMain.convertRect(cellFrame, toView:self.tblMain.superview)
-        var cellOffset = cellFrameInTable.origin.y + cellFrameInTable.size.height
-        var tableHeight = self.tblMain.bounds.size.height + cellFrameInTable.size.height
-        var cellOffsetFactor = cellOffset / tableHeight
+    func setCellImageOffset(_ cell: ImageCell, indexPath: IndexPath) {
+        let cellFrame = self.tblMain.rectForRow(at: indexPath)
+        let cellFrameInTable = self.tblMain.convert(cellFrame, to:self.tblMain.superview)
+        let cellOffset = cellFrameInTable.origin.y + cellFrameInTable.size.height
+        let tableHeight = self.tblMain.bounds.size.height + cellFrameInTable.size.height
+        let cellOffsetFactor = cellOffset / tableHeight
         cell.setBackgroundOffset(cellOffsetFactor)
     }
 
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        var imageCell = cell as! ImageCell
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let imageCell = cell as! ImageCell
         self.setCellImageOffset(imageCell, indexPath: indexPath)
     }
 
